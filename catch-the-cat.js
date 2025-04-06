@@ -144,11 +144,11 @@ function(t) {
 						break;
 					case i.LOSE:
 						this.setStatusText(f.
-                    default ("猫已经跑到地图边缘了，你输了"));
+                    default ("猫已经跑到地图边缘咯，你输了笨蛋瑜！"));
 						break;
 					case i.WIN:
 						this.setStatusText(f.
-					default ("猫已经无路可走，你赢了"));
+					default ("猫已经无路可走，你赢了，聪明的猪猪瑜"));
 						break;
 					default:
 						return
@@ -216,16 +216,16 @@ function(t) {
 			default ("游戏已经结束，重新开局")), document.getElementById("time").innerHTML = 0,this.reset(), !1;
 				var n = this.getBlock(t, e);
 				return n ? n.isWall ? (this.setStatusText(f.
-			default ("点击位置已经是墙了，禁止点击")), !1) : this.cat.i === t && this.cat.j === e ? (this.setStatusText(f.
-			default ("点击位置是猫当前位置，禁止点击")), !1) : (n.isWall = !0, this.cat.isCaught() ? (this.setStatusText(f.
-			default ("猫已经无路可走，你赢了")), this.state = i.WIN, !1) : (this.setStatusText(f.
-			default ("您点击了 ") + "(" + t + ", " + e + ")"), this.cat.step() || (this.setStatusText(f.
-			default ("猫认输，你赢了！")), this.state = i.WIN), !0)) : (this.setStatusText(f.
+			default ("点的位置已经是墙了，别点这儿啊猪猪瑜")), !1) : this.cat.i === t && this.cat.j === e ? (this.setStatusText(f.
+			default ("猪猪瑜你点到猫身上了，不许乱点")), !1) : (n.isWall = !0, this.cat.isCaught() ? (this.setStatusText(f.
+			default ("猫已经无路可走，你赢了，猪猪瑜，奖励一个亲亲")), this.state = i.WIN, !1) : (this.setStatusText(f.
+			default ("猪猪瑜点击了 ") + "(" + t + ", " + e + ")"), this.cat.step() || (this.setStatusText(f.
+			default ("小猫认输，你赢了哦猪猪瑜！")), this.state = i.WIN), !0)) : (this.setStatusText(f.
 			default ("代码错误，当前位置不存在")), !1)
 			}, e.prototype.reset = function() {
 				time = 0;
 				this.cat.reset(), this.resetBlocks(), this.randomWall(), this.state = i.PLAYING, this.setStatusText(f.
-			default ("点击小圆点，围住小猫"))
+			default ("猪猪瑜快点击小圆点，围住小猫啵"))
 			}, e.prototype.setStatusText = function(t) {
 				this.statusBar.setText(t)
 			}, e.prototype.createAnimations = function() {
@@ -747,7 +747,7 @@ default = i
 		s = function(t) {
 			function e(e) {
 				var n = t.call(this, e, 0, 0, i.
-			default ("重置"), {}) || this;
+			default ("要再来一次吗？点这儿小笨蛋"), {}) || this;
 				n.setColor("#000000");
 				var o = e.r;
 				n.setFontSize(o), n.setPadding(o, o, o, o), n.setPosition(0, e.game.canvas.height), n.setOrigin(0, 1);
